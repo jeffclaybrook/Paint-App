@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="shortcut icon" href="images/favicon.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <section class="tools-panel">
+         <div class="row">
+            <h5 class="title">Shapes</h5>
+            <ul class="options">
+               <li class="tool" id="rectangle">
+                  <img src="images/rectangle.svg" alt="Rectangle" draggable="false">
+                  <span>Rectangle</span>
+               </li>
+               <li class="tool" id="circle">
+                  <img src="images/circle.svg" alt="Circle" draggable="false">
+                  <span>Circle</span>
+               </li>
+               <li class="tool" id="triangle">
+                  <img src="images/triangle.svg" alt="Triangle" draggable="false">
+                  <span>Triangle</span>
+               </li>
+               <li>
+                  <input type="checkbox" id="fill-color" class="fill-color">
+                  <label for="fill-color">Fill color</label>
+               </li>
+            </ul>
+         </div>
+         <div class="row">
+            <h5 class="title">Options</h5>
+            <ul class="options">
+               <li class="tool active" id="brush">
+                  <img src="images/brush.svg" alt="Brush" draggable="false">
+                  <span>Brush</span>
+               </li>
+               <li class="tool" id="eraser">
+                  <img src="images/eraser.svg" alt="Eraser" draggable="false">
+                  <span>Eraser</span>
+               </li>
+               <li>
+                  <input type="range" id="size-slider" class="size-slider" min="1" max="30" value="5">
+               </li>
+            </ul>
+         </div>
+         <div class="row">
+            <h5 class="title">Colors</h5>
+            <ul class="options colors">
+               <li></li>
+               <li class="selected"></li>
+               <li></li>
+               <li></li>
+               <li>
+                  <input type="color" id="color-picker" class="color-picker" value="#4a98f7"></input>
+               </li>
+            </ul>
+         </div>
+         <div class="row buttons">
+            <button class="clear-canvas" id="clear-canvas" aria-label="Clear Canvas" type="button">Clear Canvas</button>
+            <button class="save-canvas" id="save-canvas" aria-label="Save Canvas" type="button">Save Canvas</button>
+         </div>
+      </section>
+      <section class="canvas-panel">
+         <canvas></canvas>
+      </section>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
